@@ -491,14 +491,6 @@ header #menu_mobile a span {
     overflow: hidden;
 }
 
-.tab1,
-.tab2,
-.tab3,
-.tab4,
-.tab5 {
-    margin-bottom: -0.4vw;
-}
-
 .tab1 {
     display: flex;
     justify-content: center;
@@ -721,241 +713,118 @@ header #menu_mobile a span {
     }
 }
 
-/* TAB 2 */
-.tab2 .title {
-    position: absolute;
-    left: 50%;
-    top: 5.8%;
-    transform: translate(-50%, -50%);
-    width: 18.4%;
-    z-index: 1;
-}
-
-.tab2 .img-nv {
-    position: absolute;
-    left: -18%;
-    top: -6.8%;
-    width: 60%;
-}
-
-.tab2 .line-top {
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.tab2 .line-bottom {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.tab2 .list-action {
-    position: absolute;
-    left: 50%;
-    top: 13%;
-    transform: translate(-50%, -50%);
-    width: 53%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.tab2 .list-action .btn-nap {
-    width: 26%;
-    cursor: pointer;
-}
-
-.tab2 .list-action .btn-nap:hover img {
-    transform: scale(1.1);
-    filter: brightness(120%);
-}
-
-.tab2 .list-action .btn-nap img {
-    transition: .3s;
-}
-
-.tab2 .list-action p {
-    font-size: 1.5vw;
-    color: #FFAE00;
-    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
-}
-
-.tab2 .list-item {
-    position: absolute;
-    left: 50%;
-    top: 52%;
-    transform: translate(-50%, -50%);
-    width: 54.6%;
-}
-
-.tab2 .list-item .list-item_center {
-    position: absolute;
-    left: 50%;
-    top: 47%;
-    transform: translate(-50%, -50%);
-    width: 86%;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    place-items: center;
-    column-gap: 3vw;
-    row-gap: 0.4vw;
-}
-
-.tab2 .list-item .list-item_center img {
-    width: 100%;
-}
-
-.tab2 .list-item .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    filter: grayscale(1);
-}
-
-.tab2 .list-item .item.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    filter: grayscale(0);
-}
-
-.tab2 .list-item .item .btn-reward {
-    cursor: pointer;
-    width: 84%;
-    display: flex;
-    align-items: center;
-}
-
-.tab2 .list-item .item .btn-reward p {
-    position: absolute;
-    left: 14%;
-    font-size: 1vw;
-    color: #fff;
-}
-
-.tab2 .list-item .item.active .btn-reward img {
-    animation: lightBlink 1.5s ease-in-out infinite;
-}
-
-.tab2 .list-item .list-item_foot {
-    position: absolute;
-    left: 50%;
-    bottom: 2%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.6vw;
-}
-
-.tab2 .list-item .list-item_foot .btn {
-    width: 16%;
-}
-
-.tab2 .list-item .list-item_foot p {
-    font-size: 1.2vw;
-    color: #fff;
-    text-transform: capitalize;
-}
-
-.tab2 .list-item .list-item_foot p span {
-    font-size: 1.5vw;
-    color: #FFAE00 !important;
-}
-
-.tab2 .infor {
-    position: absolute;
-    left: 50%;
-    bottom: -4%;
-    transform: translate(-50%, -50%);
-    width: 52.8%;
-}
-
-.tab2 .infor p {
-    position: absolute;
-    left: 0%;
-    top: 0;
-    font-size: 0.9vw;
-    color: #fff;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    margin-inline: 2.6vw;
+/* LANDING */
+.landing {
+    background-image: url(../images/bg-desk-1.webp);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 400vw;
 }
 
 @media (max-width: 767px) {
-    .tab2 .title {
-        top: 4.7%;
-        width: 58%;
+    .landing {
+        background-image: url(../images/bg-desk-1.webp);
     }
+}
 
-    .tab2 .img-nv {
-        display: none;
-    }
+/* TAB 2 */
+.tab2 .title {
+    margin-top: 6.8%;
+    width: 22.8%;
+    margin-inline: auto;
+}
 
-    .tab2 .list-action {
-        top: 10.8%;
-        width: 100%;
-    }
+.tab2 .frame-spin img {
+    width: 100%;
+}
 
-    .tab2 .list-action .btn-nap {
-        width: 43%
-    }
+.tab2 .frame-spin {
+    position: relative;
+    width: 35.6%;
+    margin-inline: auto;
+    margin-top: 4.8%;
+    margin-left: 47.8%;
+}
 
-    .tab2 .list-action p {
-        font-size: 4.2vw;
-        margin-right: 2vw;
-    }
+.tab2 .frame-spin .btn-spin {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    width: 26%;
+}
 
-    .tab2 .list-item {
-        top: 52.6%;
-        width: 100%;
-    }
+.tab2 .frame-spin .list-gift .gift-item {
+    position: absolute;
+    width: 20%;
+    filter: grayscale(1);
+}
 
-    .tab2 .list-item .list-item_center {
-        top: 45%;
-        width: 94%;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        column-gap: 4vw;
-        row-gap: 0.8vw;
-    }
+.tab2 .frame-spin .list-gift .gift-item.active {
+    filter: grayscale(0);
+}
 
-    .tab2 .list-item .item .btn-reward p {
-        left: 13%;
-        font-size: 3.4vw;
-    }
+.tab2 .frame-spin .list-gift .gift-1 {
+    top: 4.6%;
+    left: 4.2%;
+}
 
-    .tab2 .list-item .list-item_foot {
-        bottom: 2%;
-        width: 100%;
-        gap: 3.6vw;
-    }
+.tab2 .frame-spin .list-gift .gift-2 {
+    top: 4.6%;
+    left: 28.2%;
+}
 
-    .tab2 .list-item .list-item_foot .btn {
-        width: 15%;
-    }
+.tab2 .frame-spin .list-gift .gift-3 {
+    top: 4.6%;
+    right: 28.2%;
+}
 
-    .tab2 .list-item .list-item_foot p {
-        font-size: 4.4vw;
-    }
+.tab2 .frame-spin .list-gift .gift-4 {
+    top: 4.6%;
+    right: 4.2%;
+}
 
-    .tab2 .list-item .list-item_foot p span {
-        font-size: 5.4vw;
-    }
+.tab2 .frame-spin .list-gift .gift-5 {
+    top: 28.6%;
+    left: 4.2%;
+}
 
-    .tab2 .infor {
-        bottom: -4.6%;
-        width: 100%;
-    }
+.tab2 .frame-spin .list-gift .gift-6 {
+    top: 28.6%;
+    right: 4.2%;
+}
 
-    .tab2 .infor p {
-        font-size: 2.8vw;
-        margin-inline: 2.6vw;
-    }
+.tab2 .frame-spin .list-gift .gift-7 {
+    bottom: 27.6%;
+    left: 4.2%;
+}
+
+.tab2 .frame-spin .list-gift .gift-8 {
+    bottom: 27.6%;
+    right: 4.2%;
+}
+
+.tab2 .frame-spin .list-gift .gift-9 {
+    bottom: 4.6%;
+    left: 4.2%;
+}
+
+.tab2 .frame-spin .list-gift .gift-10 {
+    bottom: 4.6%;
+    left: 28.2%;
+}
+
+.tab2 .frame-spin .list-gift .gift-11 {
+    bottom: 4.6%;
+    right: 28.2%;
+}
+
+.tab2 .frame-spin .list-gift .gift-12 {
+    bottom: 4.6%;
+    right: 4.2%;
 }
 
 /* FOOTER */
