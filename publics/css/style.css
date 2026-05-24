@@ -499,6 +499,11 @@ header #menu_mobile a span {
     margin-bottom: -0.4vw;
 }
 
+.tab1 {
+    display: flex;
+    justify-content: center;
+}
+
 .tab1 .logo-text {
     position: absolute;
     top: 1%;
@@ -591,9 +596,9 @@ header #menu_mobile a span {
 .tab1 #btn-action-tab1 {
     position: absolute;
     left: 50%;
-    bottom: 8.6%;
+    bottom: 11.6%;
     transform: translate(-50%, -50%);
-    width: 27%;
+    width: 20%;
     display: flex;
     align-items: center;
     gap: 0.6vw;
@@ -606,6 +611,25 @@ header #menu_mobile a span {
 .tab1 #btn-action-tab1 .btn-dang-nhap:hover {
     animation: dotPulseRed 0.75s infinite;
     /* filter: brightness(125%); */
+}
+
+.tab1 .frame-login {
+    position: absolute;
+    bottom: 6%;
+    width: 17%;
+    cursor: pointer;
+}
+
+.tab1 .frame-login p {
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 1vw;
+    color: #000;
+    text-transform: capitalize;
+    line-height: 1.2vw;
 }
 
 .tab1 .list-btn-redirect {
