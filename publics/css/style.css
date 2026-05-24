@@ -730,10 +730,93 @@ header #menu_mobile a span {
 }
 
 /* TAB 2 */
+.tab2 {
+    padding-bottom: 12%;
+}
+
 .tab2 .title {
     margin-top: 6.8%;
     width: 22.8%;
     margin-inline: auto;
+}
+
+.tab2 .content-tab2 {
+    display: flex;
+    align-items: flex-start;
+    width: 62.6%;
+    gap: 2.2vw;
+    margin-left: 21%;
+    height: 100%;
+    padding-bottom: 7%;
+    margin-top: 0.8%;
+}
+
+.tab2 .content-tab2 .left-content {
+    width: 68%;
+}
+
+.tab2 .content-tab2 .left-content img {
+    width: 100%;
+}
+
+.tab2 .content-tab2 .left-content .img-nv {
+    position: absolute;
+    top: 19%;
+    left: 13.8%;
+    width: 36.2%;
+}
+
+.tab2 .content-tab2 .left-content p#count_gems {
+    font-size: 1.3vw;
+    color: #000;
+    white-space: nowrap;
+    text-transform: capitalize;
+    background-color: #FFAE00;
+    border-radius: 1vw;
+    width: fit-content;
+    margin-inline: auto;
+    font-weight: 700;
+    padding: 0.4vw 1vw;
+    position: relative;
+    z-index: 1;
+}
+
+.tab2 .content-tab2 .left-content .list-action {
+    position: absolute;
+    width: 24.4%;
+    margin-inline: auto;
+    bottom: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8vw;
+}
+
+.tab2 .content-tab2 .left-content .list-action .action {
+    display: flex;
+    align-items: flex-end;
+}
+
+.tab2 .content-tab2 .left-content .list-action .action .bg {
+    width: 100%;
+}
+
+.tab2 .content-tab2 .left-content .list-action .action .btn-reward {
+    width: 18.2%;
+    cursor: pointer;
+}
+
+.tab2 .content-tab2 .right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+}
+
+.tab2 .content-tab2 .right-content .btn-the-le {
+    width: 26%;
+    cursor: pointer;
 }
 
 .tab2 .frame-spin img {
@@ -742,19 +825,33 @@ header #menu_mobile a span {
 
 .tab2 .frame-spin {
     position: relative;
-    width: 35.6%;
-    margin-inline: auto;
-    margin-top: 4.8%;
-    margin-left: 47.8%;
+    width: 100%;
+
 }
 
-.tab2 .frame-spin .btn-spin {
+.tab2 .frame-spin .layout-btn-spin {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    width: 48%;
+    margin-inline: auto;
+}
+
+.tab2 .frame-spin .layout-btn-spin .btn-spin {
+    width: 56%;
+    margin-inline: auto;
     cursor: pointer;
-    width: 26%;
+    margin-bottom: 1vw;
+}
+
+.tab2 .frame-spin .layout-btn-spin p {
+    color: #e0cf5e;
+    font-size: 0.9vw;
+    text-transform: capitalize;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
 }
 
 .tab2 .frame-spin .list-gift .gift-item {

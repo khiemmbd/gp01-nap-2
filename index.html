@@ -160,51 +160,89 @@
           <img src="publics/images/tab2/title.webp" width="100%" />
         </div>
 
-        <div class="frame-spin">
-          <div class="bg invisible"><img src="publics/images/tab2/bg-spin.webp"></div>
-          <div class="btn-spin">
-            <img src="publics/images/tab2/btn-spin.webp">
-          </div>
-          <div class="list-gift">
-            <div class="gift-item gift-1">
-              <img src="publics/images/tab2/item-1.webp" alt="">
+        <div class="content-tab2">
+          <div class="left-content">
+            <p id="count_gems">Huyết Ngọc Hiện Có: <span>0</span></p>
+            <div class="img-nv">
+              <img src="publics/images/tab2/img-nv.webp">
             </div>
-            <div class="gift-item gift-2">
-              <img src="publics/images/tab2/item-2.webp" alt="">
+            <div class="list-action">
+              <div class="action">
+                <div class="bg">
+                  <img src="publics/images/tab2/action-1.webp">
+                </div>
+                <div class="btn-reward">
+                  <img src="publics/images/tab2/btn-reward.webp">
+                </div>
+              </div>
+
+              <div class="action">
+                <div class="bg">
+                  <img src="publics/images/tab2/action-1.webp">
+                </div>
+                <div class="btn-reward">
+                  <img src="publics/images/tab2/btn-reward.webp">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-content">
+            <div class="btn-the-le">
+              <img src="publics/images/tab2/btn-the-le.webp" width="100%">
+            </div>
+            <div div class="frame-spin">
+              <div class="bg invisible"><img src="publics/images/tab2/bg-spin.webp"></div>
+              <div class="layout-btn-spin">
+                <div class="btn-spin">
+                  <img src="publics/images/tab2/btn-spin.webp">
+                </div>
+                <p>Cần sử dụng <span>xxx</span> huyết ngọc để quay</p>
+              </div>
+              <div class="list-gift">
+                <div class="gift-item gift-1">
+                  <img src="publics/images/tab2/item-1.webp" alt="">
+                </div>
+                <div class="gift-item gift-2">
+                  <img src="publics/images/tab2/item-2.webp" alt="">
+                </div>
+
+                <div class="gift-item gift-3">
+                  <img src="publics/images/tab2/item-3.webp" alt="">
+                </div>
+                <div class="gift-item gift-4">
+                  <img src="publics/images/tab2/item-4.webp" alt="">
+                </div>
+                <div class="gift-item gift-5">
+                  <img src="publics/images/tab2/item-5.webp" alt="">
+                </div>
+                <div class="gift-item gift-6">
+                  <img src="publics/images/tab2/item-6.webp" alt="">
+                </div>
+                <div class="gift-item gift-7">
+                  <img src="publics/images/tab2/item-7.webp" alt="">
+                </div>
+                <div class="gift-item gift-8">
+                  <img src="publics/images/tab2/item-8.webp" alt="">
+                </div>
+                <div class="gift-item gift-9">
+                  <img src="publics/images/tab2/item-9.webp" alt="">
+                </div>
+                <div class="gift-item gift-10">
+                  <img src="publics/images/tab2/item-10.webp" alt="">
+                </div>
+                <div class="gift-item gift-11">
+                  <img src="publics/images/tab2/item-11.webp" alt="">
+                </div>
+                <div class="gift-item gift-12">
+                  <img src="publics/images/tab2/item-12.webp" alt="">
+                </div>
+              </div>
             </div>
 
-            <div class="gift-item gift-3">
-              <img src="publics/images/tab2/item-3.webp" alt="">
-            </div>
-            <div class="gift-item gift-4">
-              <img src="publics/images/tab2/item-4.webp" alt="">
-            </div>
-            <div class="gift-item gift-5">
-              <img src="publics/images/tab2/item-5.webp" alt="">
-            </div>
-            <div class="gift-item gift-6">
-              <img src="publics/images/tab2/item-6.webp" alt="">
-            </div>
-            <div class="gift-item gift-7">
-              <img src="publics/images/tab2/item-7.webp" alt="">
-            </div>
-            <div class="gift-item gift-8">
-              <img src="publics/images/tab2/item-8.webp" alt="">
-            </div>
-            <div class="gift-item gift-9">
-              <img src="publics/images/tab2/item-9.webp" alt="">
-            </div>
-            <div class="gift-item gift-10">
-              <img src="publics/images/tab2/item-10.webp" alt="">
-            </div>
-            <div class="gift-item gift-11">
-              <img src="publics/images/tab2/item-11.webp" alt="">
-            </div>
-            <div class="gift-item gift-12">
-              <img src="publics/images/tab2/item-12.webp" alt="">
-            </div>
           </div>
         </div>
+
       </section>
       <!-- END TAB 2 -->
     </section>
@@ -491,14 +529,7 @@
   }
 
   // GSAP Animation - Lắc nhẹ vô hạn cho ảnh nhân vật
-  gsap.to(".tab2 .img-nv img", {
-    rotation: 3,
-    duration: 3,
-    repeat: -1,
-    yoyo: true,
-    ease: "sine.inOut",
-    transformOrigin: "center center",
-  });
+
 
   // GSAP Animation - Các item trong list-item_center xuất hiện từ từ khi scroll
   gsap.fromTo(
