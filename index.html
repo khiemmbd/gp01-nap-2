@@ -281,31 +281,37 @@
 
           <div class="footer-tab2">
             <p>
-              Huyết Ngọc Đã <br />
-              Sử Dụng <br />
+              Huyết Ngọc Đã Sử Dụng <br />
               <span>20</span>
             </p>
             <div class="frame-point">
               <div class="item-point">
-                <img src="publics/images/tab2/point-1.webp" />
+                <img src="publics/images/tab2/point-1.webp" class="desk" />
+                <img src="publics/images/tab2/point-1-mobi.webp" class="mobi" />
               </div>
               <div class="item-point">
-                <img src="publics/images/tab2/point-2.webp" />
+                <img src="publics/images/tab2/point-2.webp" class="desk" />
+                <img src="publics/images/tab2/point-2-mobi.webp" class="mobi" />
               </div>
               <div class="item-point">
-                <img src="publics/images/tab2/point-3.webp" />
+                <img src="publics/images/tab2/point-3.webp" class="desk" />
+                <img src="publics/images/tab2/point-3-mobi.webp" class="mobi" />
               </div>
               <div class="item-point">
-                <img src="publics/images/tab2/point-4.webp" />
+                <img src="publics/images/tab2/point-4.webp" class="desk" />
+                <img src="publics/images/tab2/point-4-mobi.webp" class="mobi" />
               </div>
               <div class="item-point">
-                <img src="publics/images/tab2/point-5.webp" />
+                <img src="publics/images/tab2/point-5.webp" class="desk" />
+                <img src="publics/images/tab2/point-5-mobi.webp" class="mobi" />
               </div>
               <div class="item-point">
-                <img src="publics/images/tab2/point-6.webp" />
+                <img src="publics/images/tab2/point-6.webp" class="desk" />
+                <img src="publics/images/tab2/point-6-mobi.webp" class="mobi" />
               </div>
               <div class="item-point">
-                <img src="publics/images/tab2/point-7.webp" />
+                <img src="publics/images/tab2/point-7.webp" class="desk" />
+                <img src="publics/images/tab2/point-7-mobi.webp" class="mobi" />
               </div>
             </div>
           </div>
@@ -328,10 +334,7 @@
           </div>
 
           <div id="list-sv" onclick="toggleServerDropdown()" class="">
-            <img
-              src="https://cdn.gzone.tech/website/gp01/recharge2026-04-15/publics/images/tab3/select-sv.webp?v=3"
-              width="100%"
-            />
+            <img src="publics/images/tab3/select-sv.webp" width="100%" />
             <p>Chọn Server</p>
           </div>
 
@@ -344,42 +347,30 @@
           <div class="list-gift">
             <div class="gift">
               <div class="bg">
-                <img
-                  src="https://cdn.gzone.tech/website/gp01/recharge2026-04-15/publics/images/tab3/bg-gift-1.webp"
-                />
+                <img src="publics/images/tab3/bg-gift-1.webp" />
               </div>
               <div class="btn btn-brightness">
-                <img
-                  src="https://cdn.gzone.tech/website/gp01/recharge2026-04-15/publics/images/tab3/bg-btn.webp"
-                />
+                <img src="publics/images/tab3/bg-btn.webp" />
                 <p>15 Huyết Ấn</p>
               </div>
             </div>
 
             <div class="gift">
               <div class="bg">
-                <img
-                  src="https://cdn.gzone.tech/website/gp01/recharge2026-04-15/publics/images/tab3/bg-gift-2.webp"
-                />
+                <img src="publics/images/tab3/bg-gift-2.webp" />
               </div>
               <div class="btn btn-brightness">
-                <img
-                  src="https://cdn.gzone.tech/website/gp01/recharge2026-04-15/publics/images/tab3/bg-btn.webp"
-                />
+                <img src="publics/images/tab3/bg-btn.webp" />
                 <p>25 Huyết Ấn</p>
               </div>
             </div>
 
             <div class="gift">
               <div class="bg">
-                <img
-                  src="https://cdn.gzone.tech/website/gp01/recharge2026-04-15/publics/images/tab3/bg-gift-3.webp"
-                />
+                <img src="publics/images/tab3/bg-gift-3.webp" />
               </div>
               <div class="btn btn-brightness">
-                <img
-                  src="https://cdn.gzone.tech/website/gp01/recharge2026-04-15/publics/images/tab3/bg-btn.webp"
-                />
+                <img src="publics/images/tab3/bg-btn.webp" />
                 <p>110 Huyết Ấn</p>
               </div>
             </div>
@@ -607,6 +598,10 @@
                       LS Nhận Quà
                     </button>
                   </div>
+
+                  <div class="title-history">
+                    <button class="tab-button" data-tab="guide">LS Chơi</button>
+                  </div>
                 </div>
                 <div class="content-lichsu">
                   <table class="tab-content" id="notification">
@@ -744,7 +739,7 @@
 
     function updateCountdown() {
       const now = new Date();
-      const targetDate = new Date("2026-04-20T10:00:00+07:00");
+      const targetDate = new Date("2026-07-20T10:00:00+07:00");
       if (now >= targetDate) {
         document.getElementById("countdown-text").innerHTML =
           "0 ngày 0 giờ 0 phút 0 giây";
@@ -865,6 +860,21 @@
       ) {
         $("#server-dropdown").hide();
       }
+    });
+  </script>
+
+  <script>
+    $("#popup-lich-su .tab-content").hide();
+    $("#popup-lich-su #notification").show();
+    $("#popup-lich-su .tab-button").eq(0).addClass("gz-brightness-125");
+
+    $("#popup-lich-su .tab-button").click(function () {
+      var tabId = $(this).data("tab");
+      $(".tab-content").hide();
+      $("#" + tabId).show();
+
+      $("#popup-lich-su .tab-button").removeClass("gz-brightness-125");
+      $(this).addClass("gz-brightness-125");
     });
   </script>
 </html>
